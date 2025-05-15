@@ -19,7 +19,7 @@ export default function Calendar() {
         ))}
 
         {days.map(({ day, month }) => {
-          return <CalendarButtons key= {`${day}-${month}`} day={day} month={month} />;
+          return <CalendarButtons day={day} month={month} key={""} />;
         })}
       </div>
     </div>
